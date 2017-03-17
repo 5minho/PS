@@ -7,11 +7,9 @@
 const int MAX = 100000;
 const int INF = 90000000;
 
-//int cache[MAX];
 int visit[MAX];
 
 int main() {
-    //memset(cache, -1, sizeof(cache));
     memset(visit, 0, sizeof(visit)); 
     int n = 0, k = 0;
     int x = 0, y = 0;
