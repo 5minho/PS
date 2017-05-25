@@ -36,7 +36,6 @@ int main() {
         order.clear();
         buildTimes.fill(0);
         Darray.fill(0);
-
         scanf("%d %d", &N, &K);
         for(int i = 1 ; i <= N ; ++i)
             scanf("%d",&Darray[i]);
