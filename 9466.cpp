@@ -12,7 +12,6 @@ int T = 0;
 int visit[MAX];
 int finished[MAX];
 int graph[MAX];
-
 int cycle = 0;
 
 void dfs(int here) {

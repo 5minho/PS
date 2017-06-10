@@ -8,7 +8,6 @@ const int INF = 90000000;
 
 int cache[MAX];
 //int visit[MAX];
-
 //x에서 k를 찾는데 걸리는 최소 시간
 int find(int x, int k) {
     if(x < 0 || x >= MAX) return INF;

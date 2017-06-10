@@ -11,7 +11,6 @@ bool makeTarget(int target, int num) {
                                         }
                     return false;
 }
-
 int main(void) {
         int target = 0;
             std::cin >> target;

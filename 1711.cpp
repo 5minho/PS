@@ -5,7 +5,6 @@ nclude <cstdio>
 #include <utility>
 
 const double PI = 2.0 * acos(0.0);
-
 class vector2 {
     public:
             double x,y;

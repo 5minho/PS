@@ -8,7 +8,6 @@
 int extended_euclid(int r0, int r1) {
     int s0 = 1, s1 = 0;
     int t0 = 0, t1 = 1;
-
     while(r1) {
         int q = r0 / r1;
         int r = r0 - q * r1;

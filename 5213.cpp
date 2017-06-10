@@ -12,7 +12,6 @@
 const int MAX = 500;
 
 using namespace std;
-
 struct Tile {
     int left;
     int right;

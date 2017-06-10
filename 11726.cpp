@@ -5,7 +5,6 @@
 #include <cstdio>
 
 const int MOD = 10007;
-
 int main() {
     int dp[1001] = {0, 1, 2, 3};
     int n;

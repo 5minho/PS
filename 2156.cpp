@@ -9,7 +9,6 @@ const int MAX = 10000;
 int glass[MAX];
 int dp[MAX];
 int n = 0;
-
 int main() {
     scanf("%d", &n);
     for(int i = 0 ; i < n ; ++i)

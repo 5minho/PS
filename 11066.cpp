@@ -25,7 +25,6 @@ int minCostCombineFile(int from, int to) {
         ret = std::min(ret, minCostCombineFile(from, i) + minCostCombineFile(i + 1, to) + psum[to] - psum[from - 1]);
     return ret;
 }
-
 int main() {
     scanf("%d",&T);
     for(int i = 0 ; i < T ; ++i) {

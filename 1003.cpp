@@ -6,6 +6,7 @@
 #include <cstring>
 #include <vector>
 
+
 struct zeroAndone {
     int zero;
     int one;

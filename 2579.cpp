@@ -6,7 +6,6 @@ using namespace std;
 
 const int stairsNum = 301;
 int cache[stairsNum][2];
-
 int getMaxScore(vector<int>& stairs, int x, int c) {
     if(c == 0 || x < 0) return 0;
     int& ret = cache[x][c];

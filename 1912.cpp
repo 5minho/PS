@@ -9,7 +9,6 @@
 
 #include <stdio.h>
 #include <vector>
-
 #define MAX 100000
 #define MIN -1001
 

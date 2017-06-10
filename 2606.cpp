@@ -22,7 +22,6 @@ int dfs(std::vector<std::vector<int> >& network, int here) {
     }
     return ret;
 }
-
 int main() {
     //computer 개수 입력
     scanf("%d",&computer);

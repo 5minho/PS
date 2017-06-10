@@ -24,11 +24,10 @@ struct MeetingTime {
 };
 
 bool operator < (const MeetingTime& ref1, const MeetingTime& ref2) {
-    if(ref1.end == ref2.end) return ref1.start < ref2.start;
+    if(ref1.end == ref2.end)
+        return ref1.start < ref2.start;
     return ref1.end < ref2.end;
 }
-
-
 
 MeetingTime meetings[MAX];
 

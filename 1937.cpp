@@ -6,7 +6,6 @@
 //  Copight © 2017년 오민호. All rights reserved.
 //
 
-
 #include <iostream>
 #include <algorithm>
 #include <cstring>

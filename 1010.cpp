@@ -5,7 +5,6 @@
 #include <cstdio>
 #include <cstring>
 int T = 0;
-
 int main() {
     scanf("%d",&T);
     for(int i = 0 ; i < T ; ++i) {

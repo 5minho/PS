@@ -12,7 +12,6 @@ int map[MAX][MAX];
 int dy[4] = {0, -1, 0, 1};
 int dx[4] = {-1, 0, 1, 0};
 
-
 struct tomato {
     int y,x,day;
     tomato(int _y, int _x, int _day):y(_y), x(_x), day(_day) {}

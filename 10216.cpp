@@ -14,7 +14,6 @@ struct Camp {
     int x, y;
     int r;
 };
-
 std::vector<std::vector<int> > graph;
 bool visit[MAX];
 

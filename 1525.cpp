@@ -11,7 +11,6 @@ class State;
 
 typedef unsigned long long uint64;
 typedef std::map<State, int> StateMap;
-
 int get(uint64 mask, int index) {
     return (mask >> (index << 2)) & 15;
 }

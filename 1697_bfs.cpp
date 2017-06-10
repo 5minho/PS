@@ -6,7 +6,6 @@
 
 const int MAX = 100000;
 const int INF = 90000000;
-
 int visit[MAX];
 
 int main() {

@@ -3,14 +3,22 @@
 //
 
 #include <cstdio>
+#include <cstring>
 
+const int MOD = 10007;
+unsigned long long cache[91];
 
+unsigned long long f(int n) {
+    if(n == 1 || n == 2) return 1;
+    unsigned long long& ret = cache[n];
+    if(ret != -1) return ret;
+    ret =  f(n - 1) + f(n - 2);
+    return ret;
+}
 
 int main() {
-    unsigned long long dp[91] = {0, 1, 1, 2};
     int n;
+    memset(cache, -1, sizeof(cache));
     scanf("%d",&n);
-    for(int i = 3 ; i <= n ; ++i)
-        dp[i] = dp[i - 1] + dp[i - 2];
-    printf("%lld",dp[n]);
+    printf("%lld",f(n));
 }

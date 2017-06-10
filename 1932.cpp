@@ -6,7 +6,6 @@
 #include <vector>
 #include <algorithm>
 #include <cstring>
-
 std::vector<std::vector<int> > triangle;
 
 int n = 0;

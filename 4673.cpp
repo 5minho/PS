@@ -18,7 +18,6 @@ int nextNum(int n) {
     ret += n % 10;
     return ret;
 }
-
 int main() {
     memset(isSelfNum,1,sizeof(isSelfNum));
     for(int i = 1 ; i <= MAX ; ++i) {

@@ -40,7 +40,6 @@ int main() {
                 ret++;
             }
         }
-
         printf("%d\n", ret);
     }
 }

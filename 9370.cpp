@@ -19,7 +19,6 @@ struct Edge {
 struct Dist {
     int d;
 };
-
 int main() {
     scanf("%d",&T);
     for(int i = 0 ; i < T ; ++i) {

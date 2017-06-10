@@ -30,7 +30,6 @@ public:
         //std::cout << cmd << " " << x <<  std::endl;
         (this->*funcMap[cmd])(x);
     }
-
     void push(int x) {
         if(m_pos < capacity - 1) m_arr[++m_pos] = x;
     }

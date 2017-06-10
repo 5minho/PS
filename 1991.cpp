@@ -9,7 +9,6 @@ struct Node {
     char data;
     Node* left;
     Node* right;
-
     Node(char d): data(d) {
         left = nullptr;
         right = nullptr;

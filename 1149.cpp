@@ -12,7 +12,6 @@ int n = 0;
 
 int cost[MAX][3];
 int cache[MAX][MAX];
-
 // i번째 집을 color로 칠할 때 비용
 int paint(int idx, int color) {
     int& ret = cache[idx][color];

@@ -31,7 +31,6 @@ void dfs(int y, int x, int& c) {
         }
     }
 }
-
 int main() {
     // n 입력
     scanf("%d",&N); getchar();

@@ -62,12 +62,10 @@ int addSum(int y, int x) {
         }
         if(i == 4) ret = std::max(sum, ret);
     }
-
     return ret;
 }
 
 int main() {
-    int ans = 0;
     scanf("%d %d", &n, &m);
     int maxSum = 0;
     for(int i = 0 ; i < n ; ++i)

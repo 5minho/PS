@@ -9,7 +9,6 @@ const int MAX_V = 20000;
 const int INF = 987654321;
 
 vector<pair<int, int> > adj[MAX_V];
-
 vector<int> dijkstra(int start) {
         vector<int> dist(MAX_V, INF);
             priority_queue<pair<int, int> > pq;

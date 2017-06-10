@@ -7,7 +7,6 @@
 
 int N;
 int count[10001];
-
 int main() {
     scanf("%d",&N);
     int maxN = 0;

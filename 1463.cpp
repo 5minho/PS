@@ -12,7 +12,6 @@ int makeOne(int x) {
     int& ret = cache[x];
 
     if(x <= 1) return ret = 0;
-
     ret = INF;
     if(x % 3 == 0) ret = makeOne(x / 3) + 1;
     if(x % 2 == 0) ret  = std::min(ret, makeOne(x / 2) + 1);

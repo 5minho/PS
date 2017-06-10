@@ -20,7 +20,6 @@ int main() {
             {6,8,4,2},
             {1,9}
     };
-
     scanf("%d",&T);
     for(int i = 0 ; i < T ; ++i) {
         scanf("%d %d",&a,&b);

@@ -9,8 +9,6 @@
 const int MAX = 1000;
 int n = 0;
 std::vector<int> weights;
-
-
 int main() {
     std::cin.sync_with_stdio(false);
     std::cin >> n;

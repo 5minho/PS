@@ -14,7 +14,7 @@ std::array<int, MAX> buildTimes;
 std::array<int, MAX> Darray;
 std::array<bool, MAX> visit;
 std::vector<int> order;
-
+\
 int T;
 int N,K;
 int X,Y,W;

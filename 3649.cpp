@@ -10,7 +10,6 @@ const int nm = 10000000;
 int n = 0;
 int widthOfHole = 0;
 std::vector<int> lengthSet;
-
 int biSearch(int findValue, int l1) {
     int low = l1;
     int high = n - 1;

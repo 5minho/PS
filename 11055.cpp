@@ -24,7 +24,6 @@ int lis(int start) {
         if(s[start] < s[i])
             ret = std::max(ret , s[start] + lis(i));
     }
-
     return ret;
 }
 

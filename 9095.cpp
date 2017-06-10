@@ -8,17 +8,22 @@
 int dp[11];
 int t = 0;
 
+int plusOneTwoTree(int n) {
+    if(n == 1) return 1;
+    if(n == 2) return 2;
+    if(n == 3) return 4;
+    int& ret = dp[n];
+    if(ret != 0) return ret;
+    ret = plusOneTwoTree(n - 1) + plusOneTwoTree(n - 2) + plusOneTwoTree(n - 3);
+    return ret;
+}
+
 int main() {
     scanf("%d",&t);
     for(int i = 0 ; i < t ; ++i) {
         int N;
         scanf("%d", &N);
         memset(dp, 0, sizeof(dp));
-        dp[1] = 1;
-        dp[2] = 2;
-        dp[3] = 4;
-        for(int j = 4 ; j <= N ; ++j)
-            dp[j] = dp[j - 3] + dp[j - 2] + dp[j - 1];
-        printf("%d\n",dp[N]);
+        printf("%d\n",plusOneTwoTree(N));
     }
 }

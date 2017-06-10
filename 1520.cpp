@@ -16,7 +16,6 @@ int cache[MAX][MAX];
 bool isBoundaryCheck(int y, int x) {
     return (y >= 0 || y < M || x >= 0 || x < N);
 }
-
 int goThere(int y, int x) {
     if(y == M - 1 && x == N - 1) return 1;
     int& ret = cache[y][x];

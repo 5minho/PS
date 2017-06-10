@@ -6,7 +6,6 @@
 #include <cstring>
 
 const int MAX = 101;
-
 int T;
 int main() {
     scanf("%d", &T);

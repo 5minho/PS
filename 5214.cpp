@@ -24,7 +24,6 @@ array<vector<int> , MAX_N + MAX_M> graph;
 
 void bfs(int start, vector<int>& distance){
     distance = vector<int>(MAX_N + MAX_M, -1);
-
     queue<int> q;
     distance[start] = 0;
     q.push(start);
@@ -48,14 +47,7 @@ int main() {
     for (int i = 0; i < M; ++i)
         for (int j = 0, c; j < K; ++j)
             cin >> c, graph[MAX_N + i].push_back(c), graph[c].push_back(MAX_N + i);
-//
-//        for (int i = 0; i < N; ++i) {
-//            cout << "[" << i << "]" << ": ";
-//            for (int j = 0; j < graph[i].size(); ++j) {
-//                cout << graph[i][j] << " ";
-//            }
-//            cout << endl;
-//        }
+
     vector<int> distance;
     bfs(1, distance);
     if(distance[N] > 0)

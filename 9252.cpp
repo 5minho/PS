@@ -26,5 +26,4 @@ int main() {
             dp[i][j] = ((s1[i - 1] == s2[j - 1]) ? dp[i - 1][j - 1] + 1 : std::max(dp[i][j - 1], dp[i - 1][j]));
     std::cout << dp[s1.size()][s2.size()] << "\n";
     backTracking(s1.size(), s2.size());
-
 }

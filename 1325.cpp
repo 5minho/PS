@@ -87,7 +87,6 @@ int main() {
         scanf("%d %d",&trust, &getTrust);
         graph[getTrust].push_back(trust);
     }
-
     tajan();
     makeGraphOfScc();
 

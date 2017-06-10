@@ -20,8 +20,6 @@ struct island {
 int dx[] = {0, 1, 0, -1};
 int dy[] = {-1, 0, 1, 0};
 
-
-
 island map[ISLAND_MAX][ISLAND_MAX];
 int N = 0;
 

@@ -6,7 +6,6 @@
 #include <cmath>
 
 int n = 0;
-
 bool isPrime(int n) {
     if(n == 1) return false;
     if(n == 2) return true;

@@ -14,7 +14,6 @@ typedef pair<int, int> point;
 int T, N;
 int sumX = 0, sumY = 0;
 const long long INF = 9223372036854775807;
-
 inline long long min (const long long& a, const long long& b) {
     return (a == INF) ? b : (a>b) ? b : a;
 }

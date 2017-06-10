@@ -5,6 +5,8 @@
 #include <cstdio>
 #include <vector>
 #include <queue>
+#include <stack>
+#include <iostream>
 
 const int MAX = 1001;
 std::vector<std::vector<bool> > adj;
@@ -23,18 +25,26 @@ void makeGraph() {
 
 //DFS
 void dfs(int here) {
-    printf("%d ", here);
+    std::stack<int> s;
+    s.push(here);
     visit[here] = true;
-
-    for(int there = 1 ; there <= N ; ++there) {
-        if(!visit[there] && adj[here][there])
-            dfs(there);
+   // if(x == required) return;
+   // cout << x << " : " << endl;
+    while(!s.empty()){
+        int k = s.top();
+        s.pop();
+     //   if(k == required) break;
+        std::cout<<k<<" ";
+        for (int i = N; i >= 1 ; --i)
+            if (adj[k][i] && !visit[i]) {
+                s.push(i);
+                visit[i] = true;
+            }
     }
 }
 
 //BFS
 void bfs(int here) {
-    int cnt = 0;
     std::queue<int> queue;
     queue.push(here);
     visit[here] = true;
@@ -43,8 +53,6 @@ void bfs(int here) {
         int current = queue.front();
         queue.pop();
         printf("%d ", current);
-        cnt++;
-        if(cnt == N) return;
         for(int next = 1 ; next <= N; ++next) {
             if(!visit[next] && adj[current][next]) {
                 queue.push(next);

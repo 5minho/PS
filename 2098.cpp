@@ -10,7 +10,6 @@ const int INF = 987654321;
 int dist[MAX][MAX];
 int cache[MAX][1 << MAX];
 int N = 0;
-
 int shortestPath(int here, int visited) {
     if(visited == (1 << N) - 1) return dist[here][0];
     int& ret = cache[here][visited];

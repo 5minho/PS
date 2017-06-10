@@ -8,7 +8,6 @@
 #include <vector>
 
 using namespace std;
-
 string str;
 string buf;
 vector<string> tokens;

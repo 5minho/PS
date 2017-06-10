@@ -8,11 +8,9 @@
 const int MAX = 100;
 int n = 0, m = 0, h = 0;
 int box[MAX][MAX][MAX];
-
 int dy[6] = {0, -1, 0, 1, 0, 0};
 int dx[6] = {-1, 0, 1, 0, 0, 0};
 int dz[6] = {0, 0, 0, 0, 1, -1};
-
 struct Tomato {
     int z,y,x; // 토마토 위치
     int day; // 익었을때 날짜
