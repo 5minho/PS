@@ -17,7 +17,6 @@ int main() {
     for(int i = 1 ; i <= N ; ++i)
         for(int j = 1 ; j <= i/2 ; ++j) {
             p[i] = std::max(p[i], p[i - j] + p[j]);
-            ans = std::max(p[i], ans);
         }
-    std::cout << ans;
+    std::cout << p[N];
 }
