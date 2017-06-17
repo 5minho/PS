@@ -14,7 +14,7 @@ std::array<int, MAX> buildTimes;
 std::array<int, MAX> Darray;
 std::array<bool, MAX> visit;
 std::vector<int> order;
-\
+
 int T;
 int N,K;
 int X,Y,W;
@@ -51,11 +51,11 @@ int main() {
 
         std::reverse(order.begin(), order.end());
         buildTimes[order[0]] = Darray[order[0]];
+
         for(auto i : order) {
-            for(int j = 1 ; j <= N ; ++j) {
-                if(adj[j][i])
-                    buildTimes[i] = std::max(buildTimes[i], Darray[i] + buildTimes[j]);
-            }
+            for(int j = 1 ; j <= N ; ++j)
+                if(adj[j][i]) buildTimes[i] = std::max(buildTimes[i], Darray[i] + buildTimes[j]);
+
             if(i == W) {
                 printf("%d\n", buildTimes[i]);
                 break;
