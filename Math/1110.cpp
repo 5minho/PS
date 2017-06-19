@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    freopen("./InputFiles/1110.in", "r", stdin);
     int c = 0;
     scanf("%d",&c);
     int d = c;
