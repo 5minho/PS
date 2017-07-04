@@ -1,3 +1,1 @@
-# Baekjoon Online Judge
-
- BOJ에서 푼 문제들을 저장하는 Respository 입니다.
+알고리즘 문제 사이트에서 푼 문제들을 저장하는 Respository 입니다.
