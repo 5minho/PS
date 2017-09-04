@@ -4,6 +4,8 @@
 
 #include <cstdlib>
 #include <utility>
+#include <vector>
+#include <cassert>
 
 typedef int KeyType;
 
@@ -20,6 +22,7 @@ struct Node {
 
         left = newLeft;
         calcSize();
+
     }
 
     void setRight(Node* newRight) {
@@ -129,5 +132,20 @@ int countLessThan(Node* root, KeyType key) {
         return countLessThan(root->left, key);
     int ls = (root->left ? root->left->size : 0);
     return ls + 1 + countLessThan(root->right, key);
+
+}
+
+int main() {
+
+    std::vector<int> keys = {-1, 2, 0, 20, -295, 304, 3, 5, 8};
+
+    Node *root = nullptr;
+
+    for (auto key : keys) {
+        root = insert(root, new Node(key));
+    }
+
+    assert(countLessThan(root, 5) == 5);
+    assert(kth(root, 4)->key == 2);
 
 }
